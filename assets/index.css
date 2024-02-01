@@ -1,0 +1,44 @@
+.container-about, .container-course{
+    background-color: rgb(45, 78, 53);
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+.strong{
+    font-weight: bold;
+}
+
+.container-about{
+    margin-left:20px;
+}
+.container{
+    background-color: rgba(111, 181, 243, 0.872);
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+
+}
+.nested-container{
+    display: flex;
+    justify-content: space-around;
+}
+.header, .footer{
+    text-align: center;
+    background-color: rgba(115, 81, 81, 0.779);
+    padding: 10px;
+}
+
+@media screen and (max-width: 560px){
+    .nested-container{
+        flex-direction: column;
+    }
+
+    .container-about{
+        margin:20px 0 0 0;
+    }
+}
